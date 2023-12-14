@@ -1,0 +1,42 @@
+$primaryColor: #4527a4;
+
+// Custom
+.bdbNowEditing {
+	outline: 2px solid $primaryColor;
+}
+
+.pChTabPanel {
+	.components-panel__row {
+		gap: 20px;
+
+		.components-base-control {
+			width: 100%;
+		}
+	}
+
+	.bchSelectControl {
+		.css-1fdsijx-ValueContainer {
+			padding: 0px 8px;
+
+			input {
+				box-shadow: 0 0 0 1px transparent;
+			}
+
+			.css-qbdosj-Input {
+				margin: 0px;
+				padding: 0px;
+			}
+		}
+	}
+}
+
+h2.bchEmptyNotice {
+	font-size: 25px !important;
+	font-weight: 500 !important;
+	color: #fff;
+	margin: 0;
+	padding: 23px;
+	background: #4527a4;
+	text-align: center;
+
+}

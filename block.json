@@ -1,0 +1,133 @@
+{
+	"apiVersion": "1",
+	"name": "bch/code-highlight",
+	"title": "Code Highlight ",
+	"description": "Easily elevate code readability with our streamlined highlighting plugin!",
+	"category": "widgets",
+	"keywords": [
+		"highlight",
+		"code",
+		"block"
+	],
+	"textdomain": "block-directory",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": ""
+		},
+		"cId": {
+			"type": "string",
+			"default": ""
+		},
+		"language": {
+			"type": "string",
+			"default": "javascript"
+		},
+		"code": {
+			"type": "string",
+			"default": ""
+		},
+		"lineNumbers": {
+			"type": "boolean",
+			"default": true
+		},
+		"theme": {
+			"type": "string",
+			"default": "default"
+		},
+		"codeTypo": {
+			"type": "object",
+			"default": {
+				"desktop": 18,
+				"tablet": 15,
+				"mobile": 14
+			}
+		},
+		"clipBoard": {
+			"type": "boolean",
+			"default": true
+		},
+		"wordWrap": {
+			"type": "boolean",
+			"default": true
+		},
+		"width": {
+			"type": "object",
+			"default": {
+				"desktop": "100%",
+				"tablet": "100%",
+				"mobile": "100%"
+			}
+		},
+		"height": {
+			"type": "object",
+			"default": {
+				"desktop": "0px",
+				"tablet": "0px",
+				"mobile": "0px"
+			}
+		},
+		"padding": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"right": "0px",
+				"bottom": "0px",
+				"left": "0px"
+			}
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"color": "#d3cfcf42"
+			}
+		},
+		"layout": {
+			"type": "object",
+			"default": {
+				"align": "left"
+			}
+		},
+		"border": {
+			"type": "object",
+			"default": {
+				"color": "#000",
+				"style": "solid",
+				"width": "0px"
+			}
+		},
+		"shadow": {
+			"type": "object",
+			"default": {}
+		},
+		"alignment": {
+			"type": "string",
+			"default": "center"
+		},
+		"clipBoardColors": {
+			"type": "object",
+			"default": {
+				"color": "#fff",
+				"bg": "#00000024"
+			}
+		}
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"html": false
+	},
+	"example": {
+		"attributes": {
+			"preview": true,
+			"columns": {
+				"desktop": 1,
+				"tablet": 1,
+				"mobile": 1
+			}
+		}
+	},
+	"editorScript": "file:dist/editor.js"
+}
