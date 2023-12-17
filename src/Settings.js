@@ -1,6 +1,6 @@
 
 import { __ } from '@wordpress/i18n';
-import { useEffect, useState } from '@wordpress/element';
+import { useState } from '@wordpress/element';
 import { InspectorControls, } from '@wordpress/block-editor';
 import { PanelBody, PanelRow, RangeControl, SelectControl, TabPanel, TextareaControl, ToggleControl, __experimentalUnitControl as UnitControl, __experimentalBoxControl as BoxControl, } from '@wordpress/components';
 import Select from 'react-select';
@@ -19,6 +19,17 @@ const Settings = ({ attributes, setAttributes }) => {
 	const [DHeight, setDHeight] = useState('desktop');
 	const [typo, setTypo] = useState('desktop');
 
+	// useEffect(() => {
+	// 	const myDiv = document.querySelector('.my-div');
+
+	// 	CodeMirror(myDiv, {
+	// 		lineNumbers: true,
+	// 		tabSize: 2,
+	// 		value: 'console.log("Hello, World");'
+	// 	});
+	// }, []);
+
+
 	return <>
 		<InspectorControls>
 			<TabPanel className='bPlTabPanel pChTabPanel' activeClass='activeTab' tabs={generalStyleTabs} onSelect={tabController}>{tab => <>
@@ -26,7 +37,9 @@ const Settings = ({ attributes, setAttributes }) => {
 
 					<PanelBody className='bPlPanelBody' title={__('Code HighLight', 'code-highlight')} initialOpen={true}>
 						<Select className='bchSelectControl' value={languageOpt.find(option => option.value === language)} options={languageOpt} isSearchable onChange={(val) => setAttributes({ language: val?.value })} />
+						{/* <div className="my-div">
 
+						</div> */}
 						<TextareaControl className='mt10' label={__('Code', 'code-highlight')} value={code} rows={12} onChange={val => setAttributes({ code: val })} />
 
 						<ToggleControl label={__('Line Number', 'code-highlight')} className='mt10' checked={lineNumbers} onChange={val => setAttributes({ lineNumbers: val })} />

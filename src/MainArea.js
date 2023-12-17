@@ -49,8 +49,10 @@ const MainArea = ({ attributes }) => {
             <code ref={codeRef} key={key} className={`language-${language} hljs`}>
                 {codeString}
             </code>
+
+            {/* <RichText tagName="code" ref={codeRef} key={key} className={`language-${language} hljs`} value={code} onChange={(val) => console.log(val)} /> */}
         </pre>
-        {clipBoard && <button className={`bchClickToCopy ${copied ? 'disable' : ''}`} onClick={handleCopy} disabled={copied}>Copy</button>}
+        {clipBoard && <button className={`bchClickToCopy ${copied ? 'disable' : ''}`} onClick={handleCopy} disabled={copied}>{copied ? 'Copied' : 'Copy'}</button>}
     </div >
 };
 

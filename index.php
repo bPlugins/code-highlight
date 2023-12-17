@@ -28,14 +28,15 @@ class BBLOCKSCodeHighLight
 
     public function enqueueBlockAssets()
     {
-        wp_register_style('bch-codeMirrorCss', BCH_ASSETS_DIR . 'css/codeMirror.min.css', [], BCH_PLUGIN_VERSION);
-        wp_register_style('bch-codeHighLight-style', plugins_url('dist/style.css', __FILE__), ['bch-codeMirrorCss'], BCH_PLUGIN_VERSION);
+        wp_register_style('codeMirror', BCH_ASSETS_DIR . 'css/codeMirror.min.css', [], BCH_PLUGIN_VERSION);
+        wp_register_style('bch-codeHighLight-style', plugins_url('dist/style.css', __FILE__), ['codeMirror'], BCH_PLUGIN_VERSION);
 
         wp_register_script('highlight', BCH_ASSETS_DIR . 'js/highlight.min.js', [], BCH_PLUGIN_VERSION);
         wp_register_script('highlightgo', BCH_ASSETS_DIR . 'js/highlightgo.js', [], BCH_PLUGIN_VERSION);
         wp_register_script('highlightlinenumber', BCH_ASSETS_DIR . 'js/highlightlinenumber.js', [], BCH_PLUGIN_VERSION);
+        wp_register_script('codeMirror', BCH_ASSETS_DIR . 'js/codeMirror.min.js', [], BCH_PLUGIN_VERSION);
 
-        wp_register_script('bch-codeHighLight-script', plugins_url('dist/script.js', __FILE__), ['react', 'react-dom', 'highlight', 'highlightgo', 'highlightlinenumber'], BCH_PLUGIN_VERSION);
+        wp_register_script('bch-codeHighLight-script', plugins_url('dist/script.js', __FILE__), ['react', 'react-dom', 'highlight', 'highlightgo', 'highlightlinenumber', 'codeMirror'], BCH_PLUGIN_VERSION);
     }
 
     public function onInit()

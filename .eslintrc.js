@@ -17,7 +17,8 @@ module.exports = {
 	'globals': {
 		'wp': 'readonly',
 		'jQuery': 'readonly',
-		'hljs': 'readonly'
+		'hljs': 'readonly',
+		'CodeMirror': 'readonly',
 	},
 	'parserOptions': {
 		'ecmaFeatures': {

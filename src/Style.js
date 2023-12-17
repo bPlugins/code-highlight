@@ -1,5 +1,5 @@
 import { getBoxValue } from '../../Components/utils/functions';
-import { getBackgroundCSS, getBorderCSS, getColorsCSS, getIconCSS, getSeparatorCSS, getMultiShadowCSS, getSpaceCSS, getTypoCSS } from '../../Components/utils/getCSS';
+import { getBackgroundCSS, getBorderCSS, getColorsCSS, getMultiShadowCSS } from '../../Components/utils/getCSS';
 
 const Style = ({ attributes, clientId }) => {
 	const { codeTypo, lineNumbers, height, width, wordWrap, padding, background, layout, border, shadow, clipBoardColors } = attributes;

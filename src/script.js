@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const Directory = ({ attributes }) => {
-	const { columns, code } = attributes;
+	const { code } = attributes;
 	if (!code) {
 		return <p></p>
 	}

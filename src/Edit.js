@@ -1,10 +1,7 @@
-import { useState, useEffect } from 'react';
-import { __ } from '@wordpress/i18n';
-import { RichText } from '@wordpress/block-editor';
+import { useEffect } from 'react';
 
 
 // Settings Components
-import { BplMediaPlaceholder } from '../../Components';
 import { tabController } from '../../Components/utils/functions';
 
 import Settings from './Settings';
@@ -13,15 +10,10 @@ import MainArea from './MainArea';
 
 const Edit = props => {
 	const { className, attributes, setAttributes, clientId, isSelected } = props;
-	const { items, language, code } = attributes;
+	const { code } = attributes;
 
 	useEffect(() => { clientId && setAttributes({ cId: clientId.substring(0, 10) }); }, [clientId]); // Set & Update clientId to cId
 	useEffect(() => tabController(), [isSelected]);
-
-
-	// if (!code) {
-	// 	return <h2 className='bchEmptyNotice'>Insert Your Code</h2>
-	// }
 
 	return <>
 		<Settings attributes={attributes} setAttributes={setAttributes} />
