@@ -1,20 +1,20 @@
 {
-	"name": "block-directory",
+	"name": "code-highlight",
 	"version": "1.0.0",
-	"description": "Description of Block Directory",
+	"description": "Easily elevate code readability with our streamlined highlighting plugin!",
 	"main": "index.js",
 	"scripts": {
 		"lint": "eslint src",
 		"start": "webpack --mode=development --watch",
 		"sync": "browser-sync start -p 'http://localhost/' --files '**/*.php' 'dist/*.js' 'dist/*.css'",
 		"preview": "npm-run-all --parallel sync start",
-		"i18n-pot": "wp i18n make-pot . languages/block-directory.pot --exclude=\"src\" && cp ./languages/block-directory.pot ./languages/block-directory-en_US.po",
+		"i18n-pot": "wp i18n make-pot . languages/code-highlight.pot --exclude=\"src\" && cp ./languages/code-highlight.pot ./languages/code-highlight-en_US.po",
 		"i18n-json": "wp i18n make-json languages/ --no-purge",
 		"i18n-mo": "wp i18n make-mo languages/",
 		"i18n": "npm run i18n-pot && npm run i18n-json && npm run i18n-mo",
 		"build": "gulp clean && npm run lint && webpack --mode=production && npm run i18n && gulp bundle"
 	},
-	"author": "Wasek Bellah",
+	"author": "Alamin",
 	"license": "ISC",
 	"dependencies": {
 		"highlight.js": "^11.9.0",

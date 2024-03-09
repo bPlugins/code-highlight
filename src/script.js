@@ -1,4 +1,4 @@
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import './style.scss';
 import Style from './Style';
@@ -6,17 +6,15 @@ import MainArea from './MainArea';
 
 // Block Directory
 document.addEventListener('DOMContentLoaded', () => {
-	const allBlockDirectory = document.querySelectorAll('.wp-block-bch-code-highlight');
-	allBlockDirectory.forEach(directory => {
-		const attributes = JSON.parse(directory.dataset.attributes);
+	const codeHighLightEles = document.querySelectorAll('.wp-block-bch-code-highlight');
+	codeHighLightEles.forEach(codeHighlightEle => {
+		const attributes = JSON.parse(codeHighlightEle.dataset.attributes);
 
-		render(<>
+		createRoot(codeHighlightEle).render(<>
 			<Style attributes={attributes} clientId={attributes.cId} />
-
 			<Directory attributes={attributes} />
-		</>, directory);
-
-		directory?.removeAttribute('data-attributes');
+		</>);
+		codeHighlightEle?.removeAttribute('data-attributes');
 	});
 });
 

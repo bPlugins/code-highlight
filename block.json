@@ -9,7 +9,7 @@
 		"code",
 		"block"
 	],
-	"textdomain": "block-directory",
+	"textdomain": "code-highlight",
 	"attributes": {
 		"align": {
 			"type": "string",

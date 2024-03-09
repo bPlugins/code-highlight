@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Code-Highlight
- * Description: Description of the Code-Highlight.
+ * Description: Easily elevate code readability with our streamlined highlighting plugin!.
  * Version: 1.0.0
  * Author: bPlugins LLC
  * Author URI: http://bplugins.com
@@ -18,7 +18,7 @@ define('BCH_PLUGIN_VERSION', 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1
 define('BCH_ASSETS_DIR', plugin_dir_url(__FILE__) . 'assets/');
 
 // Hightlight-Code
-class BBLOCKSCodeHighLight
+class BCH_B_blocksCodeHighLight
 {
     public function __construct()
     {
@@ -66,4 +66,4 @@ class BBLOCKSCodeHighLight
 		<?php return ob_get_clean();
     } // Render
 }
-new BBLOCKSCodeHighLight();
+new BCH_B_blocksCodeHighLight();
