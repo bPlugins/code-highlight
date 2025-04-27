@@ -1,5 +1,5 @@
-import { getBoxValue } from '../../Components/utils/functions';
-import { getBackgroundCSS, getBorderCSS, getColorsCSS, getMultiShadowCSS } from '../../Components/utils/getCSS';
+import { getBoxValue } from '../../bpl-tools/utils/functions';
+import { getBackgroundCSS, getBorderCSS, getColorsCSS, getMultiShadowCSS } from '../../bpl-tools/utils/getCSS';
 
 const Style = ({ attributes, clientId }) => {
 	const { codeTypo, lineNumbers, height, width, wordWrap, padding, background, layout, border, shadow, clipBoardColors } = attributes;
@@ -16,7 +16,8 @@ const Style = ({ attributes, clientId }) => {
 			height: ${height?.desktop === '0px' ? 'auto' : height?.desktop};
 			${getBorderCSS(border)};
 			box-shadow: ${getMultiShadowCSS(shadow)};
-			${layout?.align === 'left' ? `margin-right:auto;` : layout?.align === 'right' ? `margin-left:auto;` : `margin: 0 auto;`}
+			${layout?.align === 'left' ? `margin-right:auto;` : layout?.align === 'right' ? `margin-left:auto;` : `margin: 0 auto;`};
+			overflow:hidden;
 		}
 
 		@media (max-width: 768px) {

@@ -8,9 +8,9 @@ export const bundle = () => gulp.src([
 	'**/*',
 	'!bundled/**',
 	'!node_modules/**',
-	'!src/**',
 	'!.eslintrc.js',
 	'!.gitignore',
+	'!src/**',
 	'!gulpfile.mjs',
 	'!package.json',
 	'!package-lock.json',
@@ -18,7 +18,7 @@ export const bundle = () => gulp.src([
 	'!todo.txt',
 	'!webpack.config.js',
 ]).pipe(
-	zip('code-highlight.zip')
+	zip('code-snippets-block.zip')
 ).pipe(
 	gulp.dest('bundled')
 );

@@ -6,7 +6,9 @@ import MainArea from './MainArea';
 
 // Block Directory
 document.addEventListener('DOMContentLoaded', () => {
+
 	const codeHighLightEles = document.querySelectorAll('.wp-block-bch-code-highlight');
+
 	codeHighLightEles.forEach(codeHighlightEle => {
 		const attributes = JSON.parse(codeHighlightEle.dataset.attributes);
 
@@ -24,6 +26,7 @@ const Directory = ({ attributes }) => {
 		return <p></p>
 	}
 	return <div className="bhcBlockDirectory">
+
 		<MainArea attributes={attributes} />
 	</div>
 }

@@ -3,55 +3,55 @@ import { __ } from '@wordpress/i18n';
 import { verticalLineIcon, horizontalLineIcon } from './icons';
 
 export const align = [
-	{ value: 'left', label: __('Left', 'code-highlight') },
-	{ value: 'right', label: __('Right', 'code-highlight') },
-	{ value: 'center', label: __('Center', 'code-highlight') }
+	{ value: 'left', label: __('Left', 'code-snippets-block') },
+	{ value: 'right', label: __('Right', 'code-snippets-block') },
+	{ value: 'center', label: __('Center', 'code-snippets-block') }
 ]
 
 export const themeOpt = [
-	{ value: 'default', label: __('Solid', 'code-highlight') },
-	{ value: 'dark', label: __('Dark', 'code-highlight') },
-	{ value: 'tomorrow', label: __('Tomorrow', 'code-highlight') },
-	{ value: 'solarizedLight', label: __('Solarized Light', 'code-highlight') },
-	{ value: 'twilight', label: __('Twilight', 'code-highlight') },
-	{ value: 'porple', label: __('Porple', 'code-highlight') },
+	{ value: 'default', label: __('Solid', 'code-snippets-block') },
+	{ value: 'dark', label: __('Dark', 'code-snippets-block') },
+	{ value: 'tomorrow', label: __('Tomorrow', 'code-snippets-block') },
+	{ value: 'solarizedLight', label: __('Solarized Light', 'code-snippets-block') },
+	{ value: 'twilight', label: __('Twilight', 'code-snippets-block') },
+	{ value: 'porple', label: __('Porple', 'code-snippets-block') },
 ]
 
 export const languageOpt = [
-	// { value: 'markup', label: __('Markup', 'code-highlight') },
-	{ value: 'html', label: __('HTML', 'code-highlight') },
-	{ value: 'css', label: __('CSS', 'code-highlight') },
-	{ value: 'scss', label: __('Scss', 'code-highlight') },
-	{ value: 'less', label: __('less', 'code-highlight') },
-	{ value: 'javascript', label: __('Javascript', 'code-highlight') },
-	{ value: 'typeScript', label: __('TypeScript', 'code-highlight') },
-	{ value: 'php', label: __('PHP', 'code-highlight') },
-	{ value: 'ruby', label: __('Ruby', 'code-highlight') },
-	{ value: 'Json', label: __('Json', 'code-highlight') },
-	{ value: 'http', label: __('HTTP', 'code-highlight') },
-	{ value: 'xml', label: __('XML', 'code-highlight') },
-	{ value: 'rust', label: __('Rust', 'code-highlight') },
-	{ value: 'dart', label: __('Dart', 'code-highlight') },
-	{ value: 'java', label: __('Java', 'code-highlight') },
-	{ value: 'sql', label: __('Sql', 'code-highlight') },
-	{ value: 'go', label: __('Go', 'code-highlight') },
-	{ value: 'kotlin', label: __('Kotlin', 'code-highlight') },
-	{ value: 'julia', label: __('Julia', 'code-highlight') },
-	{ value: 'python', label: __('Python', 'code-highlight') },
-	{ value: 'swift', label: __('Swift', 'code-highlight') },
-	{ value: 'scala', label: __('Scala', 'code-highlight') },
-	{ value: 'haskell', label: __('Haskell', 'code-highlight') },
-	{ value: 'perl', label: __('Perl', 'code-highlight') },
-	{ value: 'c', label: __('C', 'code-highlight') },
-	{ value: 'c', label: __('C++', 'code-highlight') },
+	// { value: 'markup', label: __('Markup', 'code-snippets-block') },
+	{ value: 'html', label: __('HTML', 'code-snippets-block') },
+	{ value: 'css', label: __('CSS', 'code-snippets-block') },
+	{ value: 'scss', label: __('Scss', 'code-snippets-block') },
+	{ value: 'less', label: __('less', 'code-snippets-block') },
+	{ value: 'javascript', label: __('Javascript', 'code-snippets-block') },
+	{ value: 'typeScript', label: __('TypeScript', 'code-snippets-block') },
+	{ value: 'php', label: __('PHP', 'code-snippets-block') },
+	{ value: 'ruby', label: __('Ruby', 'code-snippets-block') },
+	{ value: 'Json', label: __('Json', 'code-snippets-block') },
+	{ value: 'http', label: __('HTTP', 'code-snippets-block') },
+	{ value: 'xml', label: __('XML', 'code-snippets-block') },
+	{ value: 'rust', label: __('Rust', 'code-snippets-block') },
+	{ value: 'dart', label: __('Dart', 'code-snippets-block') },
+	{ value: 'java', label: __('Java', 'code-snippets-block') },
+	{ value: 'sql', label: __('Sql', 'code-snippets-block') },
+	{ value: 'go', label: __('Go', 'code-snippets-block') },
+	{ value: 'kotlin', label: __('Kotlin', 'code-snippets-block') },
+	{ value: 'julia', label: __('Julia', 'code-snippets-block') },
+	{ value: 'python', label: __('Python', 'code-snippets-block') },
+	{ value: 'swift', label: __('Swift', 'code-snippets-block') },
+	{ value: 'scala', label: __('Scala', 'code-snippets-block') },
+	{ value: 'haskell', label: __('Haskell', 'code-snippets-block') },
+	{ value: 'perl', label: __('Perl', 'code-snippets-block') },
+	{ value: 'c', label: __('C', 'code-snippets-block') },
+	{ value: 'c', label: __('C++', 'code-snippets-block') },
 ]
 
 export const layouts = [
-	{ label: __('Vertical', 'block-directory'), value: 'vertical', icon: verticalLineIcon },
-	{ label: __('Horizontal', 'block-directory'), value: 'horizontal', icon: horizontalLineIcon }
+	{ label: __('Vertical', 'code-snippets-block'), value: 'vertical', icon: verticalLineIcon },
+	{ label: __('Horizontal', 'code-snippets-block'), value: 'horizontal', icon: horizontalLineIcon }
 ];
 
 export const generalStyleTabs = [
-	{ name: 'general', title: __('General', 'block-directory') },
-	{ name: 'style', title: __('Style', 'block-directory') }
+	{ name: 'general', title: __('General', 'code-snippets-block') },
+	{ name: 'style', title: __('Style', 'code-snippets-block') }
 ];

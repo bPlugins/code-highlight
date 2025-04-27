@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 
 // Settings Components
-import { tabController } from '../../Components/utils/functions';
+import { tabController } from '../../bpl-tools/utils/functions';
 
 import Settings from './Settings';
 import Style from './Style';

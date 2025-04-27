@@ -1,30 +1,31 @@
-=== Code Highlight ===
-Contributors: bplugins, abuhayat, btechnologies
+=== Code Block - Embed code that user can copy by oneclick ===
+Contributors:bplugins, abuhayat, btechnologies
 Donate link: https://www.buymeacoffee.com/abuhayat
-Tags: block, code highlight, code, highlight, Gutenberg block
-Requires at least: 5.0+
-Tested up to: 6.4.3
-Stable tag: 1.0.0
+Tags: block, code highlight, code, snippets, Gutenberg block
+Requires at least: 6.5
+Tested up to: 6.8
+Stable tag: 1.0.2
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Easily elevate code readability with our streamlined highlighting plugin!
+The Code Snippets block plugin lets you easily copy, style, and view beautifully highlighted, responsive code on any device.
 
 == Description ==
-
-Revolutionize the way you showcase code snippets with our cutting-edge highlight plugin. Seamlessly integrated into your workflow, it effortlessly elevates readability and comprehension. With a range of customizable styles and intuitive features, our plugin ensures your code shines, enhancing presentation and engagement for both developers and audiences. 
-
-**[Demos](https://bblockswp.com/demo/code-highlight/)**
+The Code Snippets block plugin makes it easy to copy code and change its colors with different themes. It helps present code in a clean, beautiful way, making it easier for users to read and use. With syntax highlighting for many programming languages, the code is even easier to understand. Plus, the snippets are responsive, so they look good on any device.
 
 
 = Features =
-- ****: All the options you need to arrange the showcase to your liking are available here.
+- Easy code copying with a single click.
+- Theme options to change code colors.
+- Clean and beautiful code presentation.
+- Syntax highlighting for multiple programming languages.
+- Responsive design for all devices.
 
 
 = How to use =
-- First install the Code Highlight plugin
-- Add the Code Highlight block from the block category called "Widgets" in Gutenberg editor.
+- First install the Code Snippets plugin
+- Add the Code Snippets block from the block category called "Widgets" in Gutenberg editor.
 - You can change block settings from the right side settings sidebar.
 - Enjoy!
 
@@ -57,25 +58,25 @@ Revolutionize the way you showcase code snippets with our cutting-edge highlight
 
 = From Gutenberg Editor: =
 1. Go to the WordPress Block/Gutenberg Editor
-2. Search For **Code Highlight**
-3. Click on the **Code Highlight** to add the block
+2. Search For **Code Snippets**
+3. Click on the **Code Snippets** to add the block
 
 = Download & Upload: =
-1. Download the **Code Highlight** plugin (*.zip file*)
+1. Download the **Code Snippets Block** plugin (*.zip file*)
 2. In your admin area, go to the Plugins menu and click on **Add New**
-3. Click on **Upload Plugin** and choose the **`code-highlight.zip`** file and click on **Install Now**
+3. Click on **Upload Plugin** and choose the **`code-snippets-block.zip`** file and click on **Install Now**
 4. Activate the plugin and Enjoy!
 
 = Manually: =
-1. Download and upload the **Code Highlight** plugin to the **`/wp-content/plugins/`** directory
+1. Download and upload the **Code Snippets Block** plugin to the **`/wp-content/plugins/`** directory
 2. Activate the plugin through the Plugins menu in WordPress
 
 
 == Frequently Asked Questions ==
 
-= Is Code Highlight free? =
+= Is Code Snippets Block free? =
 
-Yes, Code Highlight is a free Gutenberg block plugin.
+Yes, Code Snippets Block is a free Gutenberg block plugin.
 
 = Does it work with any WordPress theme? =
 
@@ -96,11 +97,20 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 == Screenshots ==
 
-1. Default
-2. Settings
+1. Settings
+2. Demo 1
+3. Demo 2
 
 
 == Changelog ==
+
+= 1.0.2 - 27 April, 2025 =
+* border issues fixed;
+* Plugin title change, block title change and some assets updated;
+
+= 1.0.1 - 22 April, 2025 =
+* Some issues fixed;
+* assets added;
 
 = 1.0.0 =
 * Initial Release
@@ -108,13 +118,15 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 == Upgrade Notice ==
 
+= 1.0.2 - 27 April, 2025 =
+* border issues fixed;
+* Plugin title change, block title change and some assets updated;
+
+= 1.0.1 - 22 April, 2025 =
+* Some issues fixed;
+* assets added;
+
 = 1.0.0 =
 * Initial Release
 
-= Developer Notes =
-
-Public source code GitHub link for review, study, and contribute.
-
-https://github.com/bPlugins-LLC/code-highlight
-
-For more information on how to contribute to this plugin, please visit our GitHub repository.
+ 
